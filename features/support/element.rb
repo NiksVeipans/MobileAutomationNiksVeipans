@@ -106,4 +106,20 @@ class Elements
     }
   end
 
+  def get_element_text_list(timeout: 15)
+    el_list = get_multiple_elements(timeout: timeout)
+    text_list = Array.new()
+    el_list.each_with_index do |el, index|
+      wait_opts = {
+          timeout: timeout,
+          interval: 0.2,
+          message: "Could not click element number #{index+1} in this list, @type: #{@type}, @value: #{@value}, timeout: #{timeout}"
+      }
+      $driver.wait(wait_opts) {
+        text_list << el.get_text
+      }
+    end
+    return text_list
+  end
+
 end

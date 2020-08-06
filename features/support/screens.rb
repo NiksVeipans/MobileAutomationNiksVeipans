@@ -12,4 +12,12 @@ class Screens
     @register_screen = RegisterScreen.new
   end
 
+  def product_screen
+    @product_screen = ProductScreen.new
+  end
+
+  def wishlist_screen
+    @wishlist_screen = WishlistScreen.new
+  end
+
 end
