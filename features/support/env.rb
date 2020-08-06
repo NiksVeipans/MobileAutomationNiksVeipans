@@ -7,7 +7,8 @@ opts = {
         automationName: 'UiAutomator2',
         platformName: 'Android',
         udid: 'emulator-5554',
-        app: '/Users/niksveipans/Downloads/Strawberrynet.apk'
+        app: '/Users/niksveipans/Downloads/Foreveryng.apk',
+        autoGrantPermissions: true
     },
     appium_lib: {
         server_url: "http://localhost:4723/wd/hub"

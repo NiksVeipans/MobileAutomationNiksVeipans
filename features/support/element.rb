@@ -95,4 +95,15 @@ class Elements
     }
   end
 
+  def is_displayed(timeout: 15)
+    wait_opts = {
+        timeout: timeout,
+        interval: 0.2,
+        message: "Element not found! @type: #{@type}, @value: #{@value}, timeout: #{timeout}"
+    }
+    $driver.wait(wait_opts) {
+      $driver.find_element(@type, @value).displayed?
+    }
+  end
+
 end
