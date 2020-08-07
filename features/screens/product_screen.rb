@@ -11,7 +11,7 @@ class ProductScreen
 
   def get_all_added_items
     text_array = Array.new()
-    element_array = @visible_product_names.get_multiple_elements
+    element_array = @visible_product_names.get_multiple_elements(timeout: 20)
     element_array.each do | element |
       text_array << element.text
     end

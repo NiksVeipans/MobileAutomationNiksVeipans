@@ -28,5 +28,7 @@ Then(/^I validate that all the added items are present$/) do
   puts @shop_items
   puts "===== The wishlist items are: "
   puts wishlist_items
-  @shop_items == wishlist_items
+
+  raise '\nArrays are not equal' unless @shop_items == wishlist_items
+
 end
