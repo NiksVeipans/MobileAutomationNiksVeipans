@@ -1,11 +1,11 @@
 class LoginScreen
 
   def initialize
-    @register_now_button = Elements.new(:id, 'com.view9.foreveryng:id/btnRegister')
-    @email_field = Elements.new(:id, 'com.view9.foreveryng:id/etEmail')
-    @password_field = Elements.new(:id, 'com.view9.foreveryng:id/etPassword')
-    @login_button = Elements.new(:id, 'com.view9.foreveryng:id/btnLogin')
-    @login_text = Elements.new(:id, 'com.view9.foreveryng:id/tvLogin')
+    @register_now_button = Elements.new(:id, 'btnRegister')
+    @email_field = Elements.new(:id, 'etEmail')
+    @password_field = Elements.new(:id, 'etPassword')
+    @login_button = Elements.new(:id, 'btnLogin')
+    @login_text = Elements.new(:id, 'tvLogin')
   end
 
   def click_register_now

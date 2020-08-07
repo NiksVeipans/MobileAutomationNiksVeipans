@@ -1,8 +1,8 @@
 class ProductScreen
 
   def initialize
-    @wishlist_button = Elements.new(:xpath, '//*[@resource-id = "com.view9.foreveryng:id/tbLove"]')
-    @visible_product_names = Elements.new(:xpath, '//*[@resource-id = "com.view9.foreveryng:id/tvProductTitle"]')
+    @wishlist_button = Elements.new(:id, 'tbLove')
+    @visible_product_names = Elements.new(:id, 'tvProductTitle')
   end
 
   def click_all_wishlist_items

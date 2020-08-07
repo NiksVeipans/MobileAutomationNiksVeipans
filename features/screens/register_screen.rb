@@ -1,11 +1,11 @@
 class RegisterScreen
 
   def initialize
-    @sign_up_button = Elements.new(:id, 'com.view9.foreveryng:id/btnSignUp')
-    @full_name_field = Elements.new(:id, 'com.view9.foreveryng:id/etFullName')
-    @email_field = Elements.new(:id, 'com.view9.foreveryng:id/etEmail')
-    @password_field = Elements.new(:id, 'com.view9.foreveryng:id/etPassword')
-    @confirm_password_field = Elements.new(:id, 'com.view9.foreveryng:id/etConfirmPassword')
+    @sign_up_button = Elements.new(:id, 'btnSignUp')
+    @full_name_field = Elements.new(:id, 'etFullName')
+    @email_field = Elements.new(:id, 'etEmail')
+    @password_field = Elements.new(:id, 'etPassword')
+    @confirm_password_field = Elements.new(:id, 'etConfirmPassword')
   end
 
   def click_sign_up

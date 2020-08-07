@@ -1,7 +1,7 @@
 class WishlistScreen
 
   def initialize
-    @visible_wishlist_items = Elements.new(:xpath, '//*[@resource-id = "com.view9.foreveryng:id/tvProductTitle"]')
+    @visible_wishlist_items = Elements.new(:id, 'tvProductTitle')
   end
 
   def get_all_wishlist_items
