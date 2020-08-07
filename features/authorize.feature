@@ -11,7 +11,7 @@ Feature: Authorize
     And I submit the login details
     Then The home screen is displayed
 
-  @runx
+  @run
   Scenario: As a user I can authorize with existing user credentials
     Given I get to the login screen
     When I input and existing account credentials

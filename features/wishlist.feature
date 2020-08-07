@@ -1,7 +1,7 @@
 Feature: Wishlist
   nice wishlist feature comments
 
-  @run
+  @runx
   Scenario: As a user I can view liked items in my wishlist
     Given I authorize with a new account
     When I open the first item in the home screen

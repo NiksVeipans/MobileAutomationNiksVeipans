@@ -22,3 +22,20 @@ Before do
   @screens = Screens.new
   $driver.start_driver
 end
+
+After do |scenario|
+  begin
+    add_screenshot(scenario.name) if scenario.failed?
+  rescue => e
+    p 'Failed to add screenshot'
+    p e.message
+  end
+  $driver.quit_driver
+end
+
+def add_screenshot(scenario_name)
+  scenario_name.tr!(" ", "_")
+  local_name = "reports/screenshot-#{scenario_name}.png"
+  $driver.screenshot(local_name)
+  embed(local_name, 'image/png', "SCREENSHOT")
+end
